@@ -86,9 +86,9 @@ class Action(object):
 
 
 if __name__ == '__main__':
-    driver1 = DriverUtil().get_driver()
-    driver1.get("http://www.baidu.com")
-    action = Action(driver1)
+    driver_test = DriverUtil().get_driver()
+    driver_test.get("http://www.baidu.com")
+    action = Action(driver_test)
 
     element = action.find_element(("id", "kw"))
     element.send_keys("python")
